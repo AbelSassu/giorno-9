@@ -29,12 +29,13 @@ console.log(risultato2)
  Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
  Deve inoltre tornare la differenza assoluta moltiplicata per tre qualora il numero fornito sia maggiore di 19.
 */
-let risultato3 = crazyDiff(5, 19)
-function crazyDiff(num1, num2){
+let num1= 5
+let risultato3 = Math.abs(num1 - 19)
+function crazyDiff(num1){
     if (num1 > 19){
-        return
+        return risultato3 * 3
     } else {
-      
+      return risultato3
     }
 }
 console.log(risultato3)
@@ -60,12 +61,13 @@ console.log(risultato4)
  La funzione deve aggiungere la parola "EPICODE" all'inizio della stringa fornita, ma se la stringa fornita comincia già con "EPICODE" allora deve
  ritornare la stringa originale senza alterarla.
 */
-let risultato5 = epify("EPICODE è qui per te")
+const stringa= "Gigi è qui per te"
+let risultato5= epify(stringa)
 function epify(stringa){
-    if(stringa.startsWith("EPICODE") > 0){
-        return epify + ("EPICODE")
+    if(stringa.startsWith("EPICODE")){
+        return stringa
     } else {
-       return epify
+       return "EPICODE " + stringa
     }
 }
 console.log(risultato5)
@@ -118,14 +120,22 @@ console.log (risultato8)
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
 */
-let risultato9 = cutString("we come va a casa")
-function cutString (stringa9){
-let tolta = stringa9.shift()
-}
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
-
+let num10= 5
+let arrayVuoto= []
+function giveMeRandom(num10) {
+    if (n10 <= 0) {
+        return [];
+    }
+    for (let i10 = 0; i10 < n10; i10++) {
+        let arrayVuoto = Math.floor(Math.random()*11) 
+        arrayVuoto.push(arrayVuoto)
+    } return arrayVuoto
+}
+console.log()
 /* SCRIVI QUI LA TUA RISPOSTA */
